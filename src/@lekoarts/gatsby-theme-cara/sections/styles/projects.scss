@@ -1,0 +1,26 @@
+.projects {
+  h1 {
+    font-family: "Spartan";
+    margin: 0;
+    line-height: 5rem;
+    font-size: 4.5rem;
+    font-weight: 900;
+    letter-spacing: -7px;
+    font-weight: 900;
+    margin-top: 1rem;
+    text-align: left;
+
+    span {
+      color: #48bb78;
+      position: relative;
+      top: 0;
+      transition: all ease 0.5s;
+      cursor: default;
+
+      &:hover {
+        top: -10px;
+        color: #ed64a6;
+      }
+    }
+  }
+}
