@@ -1,0 +1,42 @@
+.about {
+  h1 {
+    font-family: "Spartan";
+    margin: 0;
+    line-height: 5rem;
+    font-size: 4.5rem;
+    font-weight: 900;
+    letter-spacing: -7px;
+    font-weight: 900;
+
+    span {
+      color: #3182ce;
+      position: relative;
+      top: 0;
+      transition: all ease 0.5s;
+      cursor: default;
+
+      &:hover {
+        top: -10px;
+        color: #48bb78;
+      }
+    }
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      position: relative;
+      float: left;
+      padding: 0.5rem;
+      top: 0;
+      transition: all ease 0.5s;
+      cursor: default;
+
+      &:hover {
+        top: -10px;
+        color: #48bb78;
+      }
+    }
+  }
+}

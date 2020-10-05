@@ -1,3 +1,47 @@
-# Hi, I'm Jane Doe
+import ToggleSwitch from "./ToggleSwitch";
+import "./styles/intro.scss";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaStackOverflow,
+  FaFreeCodeCamp,
+} from "react-icons/fa";
 
-I'm creating noice web experiences for the next generation of consumer-facing companies
+<div className="intro">
+  <h1>Hi</h1>
+  <h1>I'm</h1>
+  <h1>Marius</h1>
+  <h1>
+    Adam<span>.</span>
+  </h1>
+  <h3>Front End Developer</h3>
+  <a
+    href="https://www.linkedin.com/in/marius-adam-3804571a8/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaLinkedin size="3em" />
+  </a>
+  <a
+    href="https://github.com/Marius-Adam"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaGithub size="3em" />
+  </a>
+  <a
+    href="https://www.freecodecamp.org/mcadam1"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaFreeCodeCamp size="3em" />
+  </a>
+  <a
+    href="https://stackoverflow.com/users/13433802/mcadam"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaStackOverflow size="3em" />
+  </a>
+  <ToggleSwitch />
+</div>
