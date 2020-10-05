@@ -39,7 +39,7 @@
       margin-top: 2rem;
 
       img {
-        max-width: 280px;
+        object-fit: contain;
         border-radius: 10px;
         border: 18px solid #805ad5;
         -webkit-box-shadow: inset 0px 0px 0px 10px #805ad5;
