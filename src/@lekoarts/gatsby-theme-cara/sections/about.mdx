@@ -10,27 +10,46 @@ import {
 
 import "./styles/about.scss";
 
+import Avatar from "./assets/avatar.png";
+
 <div className="about">
   <div className="title">
     <h1>
       About<span>.</span>
     </h1>
   </div>
-  <img src="https://i.imgur.com/WAXYdKO.png" width="220" alt="avatar"></img>
-  <p>
-    Hello, my name is <span>Marius Adam</span>. I am a self-taught
-    <span> Web Developer</span>. My journey so far has offered me engaging challenges
-    that made me constantly learn and improve my skills. I focus on writing clean,
-    efficient code and I am experienced in <span>HTML5</span>, <span>
-      CSS3
-    </span> and
-    <span> JavaScript</span>. I have knowledge of current
-    <span> UI/UX</span> trends and I am proficient in
-    <span> Git Version Control</span> plus other popular libraries and
-    frameworks. Currently working on solidifying my
-    <span> JavaScript</span> and <span>React</span> fundamentals by contributing
-    to open source projects on <span>GitHub</span>.
-  </p>
+  <div className="row">
+    <div className="left-col">
+      <img src={Avatar} alt="avatar"></img>
+      <p>
+        <a
+          href="https://drive.google.com/file/d/1RL9GNPqIvTuhCthVXIcWIAnkUT9vBr6O/view"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="download-button"> Download CV</button>
+        </a>
+      </p>
+    </div>
+    <div className="right-col">
+      <p>
+        Hello, I'm <span>Marius Adam</span> and I am a self-taught
+        <span> Web Developer</span>.<br /> My journey so far has offered me engaging
+        challenges that made me constantly learn and improve my skills. I have a
+        keen eye for detail and I take great pride in my work. The main areas of
+        my expertise are <span>HTML5</span> | <span>CSS3</span> | <span>
+          JavaScript
+        </span> | <span>React</span> | <span>TypeScript</span> | <span>
+          Sass
+        </span>. <br />I regularly use version control systems like <span>
+          Git
+        </span> and project management tools like <span>Azure DevOps</span>. Aside
+        from my job, I like to create and contribute to open source projects. That
+        helps me to learn a ton of new stuff, grow as a developer and stay up to
+        date with current <span>UI/UX</span> trends.
+      </p>
+    </div>
+  </div>
   <ul className="skill-list">
     <li>
       <FaHtml5 size="3.5em" />
@@ -49,9 +68,6 @@ import "./styles/about.scss";
     </li>
     <li>
       <FaGitAlt size="3.5em" />
-    </li>
-    <li>
-      <FaBootstrap size="3.5em" />
     </li>
   </ul>
 </div>

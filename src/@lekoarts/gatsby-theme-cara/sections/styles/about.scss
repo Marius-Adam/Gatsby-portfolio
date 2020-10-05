@@ -1,4 +1,8 @@
 .about {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
   h1 {
     font-family: "Spartan";
     margin: 0;
@@ -7,6 +11,8 @@
     font-weight: 900;
     letter-spacing: -7px;
     font-weight: 900;
+    margin-top: 1rem;
+    text-align: left;
 
     span {
       color: #3182ce;
@@ -22,13 +28,79 @@
     }
   }
 
-  ul {
+  .row {
+    display: flex;
+
+    .left-col {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+
+      img {
+        max-width: 280px;
+        border-radius: 10px;
+        border: 18px solid #805ad5;
+        -webkit-box-shadow: inset 0px 0px 0px 10px #805ad5;
+        -moz-box-shadow: inset 0px 0px 0px 10px #805ad5;
+        box-shadow: inset 0px 0px 0px 10px #805ad5;
+        transform: translatey(0px);
+        animation: float 6s ease-in-out infinite;
+      }
+
+      p {
+        margin: 1rem auto;
+
+        .download-button {
+          font-family: "Spartan";
+          font-weight: 600;
+          color: #805ad5;
+          background-color: #e2e8f0;
+          padding: 10px;
+          border: 4px solid #805ad5;
+          border-radius: 6px;
+          display: inline-block;
+          outline: none;
+          cursor: pointer;
+          transition: all 0.5s ease 0s;
+
+          &:hover {
+            color: #48bb78;
+            border-radius: 50px;
+            border-color: #48bb78;
+            transition: all 0.5s ease 0s;
+          }
+        }
+      }
+    }
+
+    .right-col {
+      margin-left: 8rem;
+    }
+  }
+
+  p {
+    font-family: "Raleway";
+    text-align: left;
+    span {
+      font-weight: bold;
+      color: #48bb78;
+      position: relative;
+      top: 0;
+      transition: all ease 0.5s;
+      cursor: default;
+    }
+  }
+
+  .skill-list {
     list-style-type: none;
+    padding: 0px;
 
     li {
       position: relative;
-      float: left;
-      padding: 0.5rem;
+      display: inline;
+      padding: 1rem;
       top: 0;
       transition: all ease 0.5s;
       cursor: default;
@@ -36,6 +108,55 @@
       &:hover {
         top: -10px;
         color: #48bb78;
+      }
+    }
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+/* Small and medium devices (phones, tablets 1024px and down) */
+@media only screen and (max-width: 1224px) {
+  .about {
+    .row {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .left-col p {
+        width: auto;
+      }
+
+      .right-col {
+        margin-left: 0;
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .about {
+    h1 {
+      font-size: 4rem;
+    }
+
+    .skill-list {
+      li {
+        font-size: 0.7rem;
       }
     }
   }
