@@ -1,4 +1,7 @@
 .contact {
+  display: flex;
+  flex-direction: column;
+
   h1 {
     font-family: "Spartan";
     margin: 0;
@@ -25,6 +28,76 @@
   }
 }
 
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    position: absolute;
+    bottom: 4rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: pink;
+
+    &:hover {
+      bottom: 4.3rem;
+      color: #48bb78;
+    }
+  }
+
+  a {
+    color: pink;
+    position: relative;
+    top: 0;
+    transition: all ease 0.5s;
+    outline: none;
+
+    &:hover {
+      top: -10px;
+      color: #48bb78;
+    }
+
+    svg {
+      margin: 0 1rem;
+    }
+  }
+}
+
 .css-pn901d {
   display: none !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .contat {
+    h1 {
+      font-size: 3.5rem;
+      line-height: 3.5rem;
+    }
+  }
+
+  .footer {
+    button {
+      font-size: 0.7rem;
+    }
+
+    a {
+      font-size: 0.7rem;
+      svg {
+        margin-right: 0.5rem;
+      }
+    }
+  }
 }

@@ -1,7 +1,50 @@
 import "./styles/contact.scss";
+import scrollTo from "gatsby-plugin-smoothscroll";
+import {
+  FaChevronUp,
+  FaGithub,
+  FaLinkedin,
+  FaStackOverflow,
+  FaFreeCodeCamp,
+} from "react-icons/fa";
 
 <div className="contact">
   <h1>
     Contact<span>.</span>
   </h1>
+</div>
+
+<div className="footer">
+  <button onClick={() => scrollTo("#intro")}>
+    <FaChevronUp size="4em" />
+  </button>
+  <br />
+  <a
+    href="https://www.linkedin.com/in/marius-adam-3804571a8/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaLinkedin size="3em" />
+  </a>
+  <a
+    href="https://github.com/Marius-Adam"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaGithub size="3em" />
+  </a>
+  <a
+    href="https://www.freecodecamp.org/mcadam1"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaFreeCodeCamp size="3em" />
+  </a>
+  <a
+    href="https://stackoverflow.com/users/13433802/mcadam"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaStackOverflow size="3em" />
+  </a>
 </div>
