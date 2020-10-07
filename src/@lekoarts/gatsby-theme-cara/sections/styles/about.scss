@@ -137,8 +137,15 @@
       justify-content: center;
       align-items: center;
 
-      .left-col p {
-        width: auto;
+      .left-col {
+        p {
+          width: auto;
+
+          .download-button {
+            font-size: 0.8rem;
+            padding: 6px;
+          }
+        }
       }
 
       .right-col {
