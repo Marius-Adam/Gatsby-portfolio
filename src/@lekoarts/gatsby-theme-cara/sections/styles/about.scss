@@ -57,21 +57,22 @@
         .download-button {
           font-family: "Spartan";
           font-weight: 600;
-          color: #805ad5;
-          background-color: #e2e8f0;
+          font-size: 1rem;
+          background-color: transparent;
+          color: #48bb78;
           padding: 10px;
-          border: 4px solid #805ad5;
+          border: 4px solid #48bb78;
           border-radius: 6px;
           display: inline-block;
           outline: none;
           cursor: pointer;
-          transition: all 0.5s ease 0s;
+          transition: all 0.7s ease 0s;
 
           &:hover {
-            color: #48bb78;
+            color: #805ad5;
             border-radius: 50px;
-            border-color: #48bb78;
-            transition: all 0.5s ease 0s;
+            border: 4px solid #805ad5;
+            transition: all 0.7s ease 0s;
           }
         }
       }
@@ -98,6 +99,7 @@
   .skill-list {
     list-style-type: none;
     padding: 0px;
+    margin-bottom: 50rem;
 
     li {
       position: relative;

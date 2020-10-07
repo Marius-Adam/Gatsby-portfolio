@@ -24,3 +24,14 @@
     }
   }
 }
+
+.css-1c8z308-Projects {
+  margin-bottom: 50rem;
+}
+
+/* Small devices (phones, 794px and down) */
+@media only screen and (max-width: 794px) {
+  .css-1c8z308-Projects {
+    grid-template-columns: 1fr !important;
+  }
+}
