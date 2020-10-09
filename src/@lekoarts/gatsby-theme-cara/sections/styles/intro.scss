@@ -32,20 +32,23 @@
     margin-bottom: 10px;
   }
 
-  a {
-    color: #48bb78;
-    position: relative;
-    top: 0;
-    transition: all ease 0.5s;
-    outline: none;
+  .skill-list {
+    margin-bottom: 15rem;
+    a {
+      color: #48bb78;
+      position: relative;
+      top: 0;
+      transition: all ease 0.5s;
+      outline: none;
 
-    &:hover {
-      top: -10px;
-      color: pink;
-    }
+      &:hover {
+        top: -10px;
+        color: pink;
+      }
 
-    svg {
-      margin-right: 1rem;
+      svg {
+        margin-right: 1rem;
+      }
     }
   }
 }
