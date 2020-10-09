@@ -29,6 +29,7 @@
 .css-kfx1uu {
   margin-bottom: 50rem !important;
   text-align: center;
+  grid-gap: 3rem;
 
   .title {
     font-family: "Spartan";
@@ -50,11 +51,7 @@
       top: 0;
       transition: all ease 0.5s;
       cursor: default;
-
-      &:hover {
-        top: -2px;
-        color: #48bb78;
-      }
+      color: black;
     }
   }
 
@@ -66,29 +63,31 @@
     margin: 0;
   }
 
-  .links {
-    display: flex;
-    justify-content: center;
+  a {
+    margin: 0 0.5rem;
 
-    div {
-      margin: 0 0.5rem;
+    button {
+      font-family: "Spartan";
+      font-weight: 600;
+      font-size: 0.5rem;
+      background-color: #fff;
+      padding: 5px;
+      border: none;
+      border-radius: 6px;
+      display: inline-block;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.7s ease 0s;
+      box-shadow: 0 0 5px white;
 
-      button {
-        font-family: "Spartan";
-        font-weight: 600;
-        font-size: 0.5rem;
-        background-color: transparent;
-        padding: 5px;
-        border-radius: 6px;
-        display: inline-block;
-        outline: none;
-        cursor: pointer;
+      &:hover {
+        border-radius: 50px;
         transition: all 0.7s ease 0s;
+      }
 
-        &:hover {
-          border-radius: 50px;
-          transition: all 0.7s ease 0s;
-        }
+      svg {
+        vertical-align: text-top;
+        margin-right: 0.2rem;
       }
     }
   }
@@ -103,6 +102,9 @@
 .css-1ax792r,
 .css-jwi0j8 {
   padding: 0 !important;
+  max-width: 30rem;
+
+  justify-self: center;
 }
 
 .css-xr4zsl-ProjectCard,
@@ -118,8 +120,15 @@
       margin-top: 30rem;
     }
   }
+  .placeholder-div {
+    display: none;
+  }
 
   .css-1c8z308-Projects {
     grid-template-columns: 1fr !important;
+  }
+  .css-1c8z308-Projects .title,
+  .css-kfx1uu .title {
+    font-size: 1.5rem;
   }
 }
