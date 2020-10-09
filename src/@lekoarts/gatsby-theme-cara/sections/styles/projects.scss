@@ -28,6 +28,85 @@
 .css-1c8z308-Projects,
 .css-kfx1uu {
   margin-bottom: 50rem !important;
+  text-align: center;
+
+  .title {
+    font-family: "Spartan";
+    color: #fff;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .skill-list {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0;
+
+    li {
+      position: relative;
+      display: inline;
+      padding: 1rem;
+      top: 0;
+      transition: all ease 0.5s;
+      cursor: default;
+
+      &:hover {
+        top: -2px;
+        color: #48bb78;
+      }
+    }
+  }
+
+  .description {
+    font-family: "Raleway";
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+
+    div {
+      margin: 0 0.5rem;
+
+      button {
+        font-family: "Spartan";
+        font-weight: 600;
+        font-size: 0.5rem;
+        background-color: transparent;
+        padding: 5px;
+        border-radius: 6px;
+        display: inline-block;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.7s ease 0s;
+
+        &:hover {
+          border-radius: 50px;
+          transition: all 0.7s ease 0s;
+        }
+      }
+    }
+  }
+}
+
+.css-1amuae2-ProjectCard,
+.css-1uk8tle-ProjectCard,
+.css-u75v5-ProjectCard,
+.css-143qgn-ProjectCard,
+.css-1qho0ff,
+.css-1tbj48l,
+.css-1ax792r,
+.css-jwi0j8 {
+  padding: 0 !important;
+}
+
+.css-xr4zsl-ProjectCard {
+  padding-top: 1rem !important;
 }
 
 /* Small devices (phones, 794px and down) */
