@@ -120,9 +120,6 @@
       margin-top: 30rem;
     }
   }
-  .placeholder-div {
-    display: none;
-  }
 
   .css-1c8z308-Projects {
     grid-template-columns: 1fr !important;
@@ -130,5 +127,12 @@
   .css-1c8z308-Projects .title,
   .css-kfx1uu .title {
     font-size: 1.5rem;
+  }
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .placeholder-div {
+    display: none;
   }
 }
