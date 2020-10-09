@@ -32,8 +32,7 @@
     margin-bottom: 10px;
   }
 
-  .skill-list {
-    margin-bottom: 15rem;
+  .skill-links {
     a {
       color: #48bb78;
       position: relative;
@@ -74,10 +73,13 @@
       font-size: 1rem;
     }
 
-    a {
-      font-size: 0.7rem;
-      svg {
-        margin-right: 0.5rem;
+    .skill-links {
+      margin-bottom: 15rem;
+      a {
+        font-size: 0.7rem;
+        svg {
+          margin-right: 0.5rem;
+        }
       }
     }
   }
