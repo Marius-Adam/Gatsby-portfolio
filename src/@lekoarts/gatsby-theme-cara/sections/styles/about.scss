@@ -15,7 +15,7 @@
     text-align: left;
 
     span {
-      color: #3182ce;
+      color: #48bb78;
       position: relative;
       top: 0;
       transition: all ease 0.5s;
@@ -23,7 +23,7 @@
 
       &:hover {
         top: -10px;
-        color: #48bb78;
+        color: #3182ce;
       }
     }
   }
@@ -162,6 +162,7 @@
 @media only screen and (max-width: 600px) {
   .about {
     h1 {
+      margin-top: 10rem;
       font-size: 4rem;
     }
 
