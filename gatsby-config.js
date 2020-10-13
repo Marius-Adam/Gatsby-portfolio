@@ -9,8 +9,8 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // Of course you can also add new values here to query them like usual
     siteTitleAlt: `MA Portfolio Website`,
-    // Used for og:image and must be placed inside the `static` folder
-    siteImage: `/newbanner.jpg`,
+    siteUrl: `https://www.mariusadam.com/`,
+    siteImage: `/banner.jpg`,
   },
   plugins: [
     {
